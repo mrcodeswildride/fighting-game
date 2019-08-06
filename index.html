@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fighting Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.35">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="prefetch" href="explosion.png">
+</head>
+
+<body>
+    <h1>Fighting Game</h1>
+
+    <div id="health">
+        <div>
+            <div class="tank1StatusBox">
+                <div id="tank1HealthBar" class="healthBar"></div>
+            </div>
+
+            <div id="tank1HealthText">Health: 100</div>
+        </div>
+
+        <div>
+            <div class="tank2StatusBox">
+                <div id="tank2HealthBar" class="healthBar"></div>
+            </div>
+
+            <div id="tank2HealthText">Health: 100</div>
+        </div>
+    </div>
+
+    <div id="charge">
+        <div>
+            <div class="tank1StatusBox">
+                <div id="tank1ChargeBar" class="chargeBar"></div>
+            </div>
+
+            <div id="tank1ChargeText">Charge: 0</div>
+        </div>
+
+        <div>
+            <div class="tank2StatusBox">
+                <div id="tank2ChargeBar" class="chargeBar"></div>
+            </div>
+
+            <div id="tank2ChargeText">Charge: 0</div>
+        </div>
+    </div>
+
+    <div id="tanks">
+        <div>
+            <img id="tank1" src="tank.png">
+        </div>
+
+        <div>
+            <img id="tank1Bullet" src="bullet.jpg">
+            <img id="tank2Bullet" src="bullet.jpg">
+            <img id="tank1Rocket" src="rocket.png">
+            <img id="tank2Rocket" src="rocket.png">
+        </div>
+
+        <div>
+            <img id="tank2" src="tank.png">
+        </div>
+    </div>
+
+    <div id="controls">
+        <div id="tank1Controls">
+            <button id="tank1ChargeButton">Charge rocket</button>
+            <button id="tank1ShootButton">Shoot</button>
+        </div>
+
+        <div id="tank2Controls">
+            <button id="tank2ShootButton" disabled>Shoot</button>
+            <button id="tank2ChargeButton" disabled>Charge rocket</button>
+        </div>
+    </div>
+
+    <audio id="shotSound" src="shot.mp3"></audio>
+    <audio id="chargeSound" src="charge.wav"></audio>
+    <audio id="rocketSound" src="rocket.wav"></audio>
+    <audio id="explosionSound" src="explosion.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
