@@ -1,0 +1,148 @@
+body {
+  background-color: beige;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+#health {
+  margin-bottom: 20px;
+}
+
+#charge {
+  margin-bottom: 30px;
+}
+
+#health > div,
+#charge > div {
+  display: inline-block;
+  width: 300px;
+}
+
+#health > div:first-child,
+#charge > div:first-child {
+  margin-right: 300px;
+}
+
+#health > div:last-child,
+#charge > div:last-child {
+  text-align: right;
+}
+
+.tank1StatusBox,
+.tank2StatusBox {
+  display: inline-block;
+  width: 200px;
+  height: 25px;
+  outline: 3px solid black;
+  margin-bottom: 5px;
+}
+
+.tank2StatusBox {
+  transform: scaleX(-1);
+}
+
+.healthBar,
+.chargeBar {
+  height: 25px;
+  transition: width 1s;
+}
+
+.healthBar {
+  width: 100%;
+  background-color: #22b14c;
+}
+
+.chargeBar {
+  width: 0%;
+  background-color: #00a2e8;
+}
+
+#tanks {
+  margin-bottom: 20px;
+}
+
+#tanks > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 111px;
+  text-align: center;
+  position: relative;
+}
+
+#tank1,
+#tank2 {
+  width: 300px;
+}
+
+#tank1.explosion,
+#tank2.explosion {
+  width: auto;
+  height: 111px;
+}
+
+#tank2 {
+  transform: scaleX(-1);
+}
+
+#tank1Bullet,
+#tank2Bullet {
+  width: 50px;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+  visibility: hidden;
+  transition: transform 1s;
+}
+
+#tank1Bullet {
+  left: -50px;
+}
+
+#tank2Bullet {
+  left: 300px;
+  transform: scaleX(-1);
+}
+
+#tank1Rocket,
+#tank2Rocket {
+  width: 150px;
+  position: absolute;
+  top: 32px;
+  z-index: 1;
+  visibility: hidden;
+  transition: transform 1s;
+}
+
+#tank1Rocket {
+  left: -150px;
+}
+
+#tank2Rocket {
+  left: 300px;
+  transform: scaleX(-1);
+}
+
+#controls > div {
+  display: inline-block;
+  width: 300px;
+}
+
+#controls button {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+#controls button:first-child {
+  margin-right: 15px;
+}
+
+#tank1Controls {
+  margin-right: 300px;
+}
+
+#tank2Controls {
+  text-align: right;
+}
