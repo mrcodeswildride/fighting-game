@@ -79,8 +79,8 @@ h1 {
 
 #tank1.explosion,
 #tank2.explosion {
-  width: auto;
-  height: 111px;
+  width: 120px;
+  margin-top: 4px;
 }
 
 #tank2 {
