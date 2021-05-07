@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Fighting Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.35" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="explosion.png" rel="prefetch" />
+    <script src="script.js" defer></script>
+  </head>
 
-<head>
-	<title>Fighting Game</title>
-	<meta name="viewport" content="width=device-width, initial-scale=0.35">
-	<link href="style.css" rel="stylesheet">
-	<link href="explosion.png" rel="prefetch">
-	<script src="script.js" defer>
+  <body>
+    <h1>Fighting Game</h1>
 
-	</script>
-</head>
+    <div id="health">
+      <div>
+        <div class="tank1StatusBox">
+          <div class="healthBar" id="tank1HealthBar"></div>
+        </div>
 
-<body>
-	<h1>Fighting Game</h1>
+        <div id="tank1HealthText">Health: 100</div>
+      </div>
 
-	<div id="health">
-		<div>
-			<div class="tank1StatusBox">
-				<div class="healthBar" id="tank1HealthBar"></div>
-			</div>
+      <div>
+        <div class="tank2StatusBox">
+          <div class="healthBar" id="tank2HealthBar"></div>
+        </div>
 
-			<div id="tank1HealthText">Health: 100</div>
-		</div>
-
-		<div>
-			<div class="tank2StatusBox">
-				<div class="healthBar" id="tank2HealthBar"></div>
-			</div>
-
-			<div id="tank2HealthText">Health: 100</div>
-		</div>
-	</div>
-
-	<div id="charge">
-		<div>
-			<div class="tank1StatusBox">
-				<div class="chargeBar" id="tank1ChargeBar"></div>
-			</div>
-
-			<div id="tank1ChargeText">Charge: 0</div>
-		</div>
-
-		<div>
-			<div class="tank2StatusBox">
-				<div class="chargeBar" id="tank2ChargeBar"></div>
-			</div>
-
-			<div id="tank2ChargeText">Charge: 0</div>
-		</div>
-	</div>
-
-	<div id="tanks">
-		<div>
-			<img src="tank.png" id="tank1">
+        <div id="tank2HealthText">Health: 100</div>
+      </div>
     </div>
 
-    <div>
-      <img src="bullet.jpg" id="tank1Bullet">
-      <img src="bullet.jpg" id="tank2Bullet">
-      <img src="rocket.png" id="tank1Rocket">
-      <img src="rocket.png" id="tank2Rocket">
+    <div id="charge">
+      <div>
+        <div class="tank1StatusBox">
+          <div class="chargeBar" id="tank1ChargeBar"></div>
+        </div>
+
+        <div id="tank1ChargeText">Charge: 0</div>
+      </div>
+
+      <div>
+        <div class="tank2StatusBox">
+          <div class="chargeBar" id="tank2ChargeBar"></div>
+        </div>
+
+        <div id="tank2ChargeText">Charge: 0</div>
+      </div>
     </div>
 
-    <div>
-      <img src="tank.png" id="tank2">
+    <div id="tanks">
+      <div>
+        <img src="tank.png" id="tank1" />
+      </div>
+
+      <div>
+        <img src="bullet.jpg" id="tank1Bullet" />
+        <img src="bullet.jpg" id="tank2Bullet" />
+        <img src="rocket.png" id="tank1Rocket" />
+        <img src="rocket.png" id="tank2Rocket" />
+      </div>
+
+      <div>
+        <img src="tank.png" id="tank2" />
+      </div>
     </div>
-  </div>
 
-  <div id="controls">
-    <div id="tank1Controls">
-      <button id="tank1ChargeButton">Charge rocket</button>
-      <button id="tank1ShootButton">Shoot</button>
+    <div id="controls">
+      <div id="tank1Controls">
+        <button id="tank1ChargeButton">Charge rocket</button>
+        <button id="tank1ShootButton">Shoot</button>
+      </div>
+
+      <div id="tank2Controls">
+        <button id="tank2ShootButton" disabled>Shoot</button>
+        <button id="tank2ChargeButton" disabled>Charge rocket</button>
+      </div>
     </div>
 
-    <div id="tank2Controls">
-      <button id="tank2ShootButton" disabled>Shoot</button>
-      <button id="tank2ChargeButton" disabled>Charge rocket</button>
-    </div>
-  </div>
-
-  <audio src="shot.mp3" id="shotSound"></audio>
-  <audio src="charge.wav" id="chargeSound"></audio>
-  <audio src="rocket.wav" id="rocketSound"></audio>
-  <audio src="explosion.wav" id="explosionSound"></audio>
-</body>
-
+    <audio src="shot.mp3" id="shotSound"></audio>
+    <audio src="charge.wav" id="chargeSound"></audio>
+    <audio src="rocket.wav" id="rocketSound"></audio>
+    <audio src="explosion.wav" id="explosionSound"></audio>
+  </body>
 </html>

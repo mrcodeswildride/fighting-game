@@ -69,8 +69,7 @@ function tank1ChargeRocket() {
 
     tank2ShootButton.disabled = false
     tank2ChargeButton.disabled = false
-  }
-  else {
+  } else {
     tank1Charge = 0
 
     updateTank1Charge()
@@ -120,8 +119,7 @@ function tank2ChargeRocket() {
 
     tank1ShootButton.disabled = false
     tank1ChargeButton.disabled = false
-  }
-  else {
+  } else {
     tank2Charge = 0
 
     updateTank2Charge()
@@ -149,8 +147,7 @@ function hitTank1() {
   if (tank1Health > 0) {
     tank1ShootButton.disabled = false
     tank1ChargeButton.disabled = false
-  }
-  else {
+  } else {
     explodeTank1()
   }
 }
@@ -169,8 +166,7 @@ function blastTank1() {
   if (tank1Health > 0) {
     tank1ShootButton.disabled = false
     tank1ChargeButton.disabled = false
-  }
-  else {
+  } else {
     explodeTank1()
   }
 }
@@ -187,8 +183,7 @@ function hitTank2() {
   if (tank2Health > 0) {
     tank2ShootButton.disabled = false
     tank2ChargeButton.disabled = false
-  }
-  else {
+  } else {
     explodeTank2()
   }
 }
@@ -207,8 +202,7 @@ function blastTank2() {
   if (tank2Health > 0) {
     tank2ShootButton.disabled = false
     tank2ChargeButton.disabled = false
-  }
-  else {
+  } else {
     explodeTank2()
   }
 }
